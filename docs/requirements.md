@@ -31,7 +31,12 @@ A short card below the demo, with 2–4 bullets, that says what the concept beca
 | Transactions | Bitcoin records coins as "unspent outputs" (UTXOs), while Ethereum keeps account balances like this demo does. Programs that run on the chain became **smart contracts** (Ethereum, 2015). Those enabled **tokens** (ERC-20), **stablecoins** and **DeFi** (lending and trading without a bank). Stablecoins are backed by cash reserves (USDT 2014, USDC 2018), by crypto collateral (DAI 2017), or by an algorithm (Terra UST, which collapsed in May 2022). |
 
 ### Timeline page
-One extra page with a simple vertical timeline linking the levels to history: 2008 Bitcoin whitepaper · 2009 Bitcoin launch · 2014 Tether (USDT) · 2015 Ethereum and smart contracts · 2017 DAI and the ERC-20 token boom · 2018 USDC · 2020 "DeFi summer" · 2022 The Merge and the UST collapse. Each entry says which level it relates to.
+One extra page with a simple vertical timeline linking the levels to history: 1991 Haber & Stornetta, a timestamped chain of document hashes (Hash, Blockchain) · 1994 Nick Szabo coins the term "smart contract" (Transactions) · 1997 Hashcash proof-of-work, as anti-spam (Mining) · 2008 Bitcoin whitepaper · 2009 Bitcoin launch, using the UTXO model · 2014 Tether (USDT) · 2015 Ethereum, with account balances and smart contracts · 2017 DAI and the ERC-20 token boom · 2018 USDC · 2020 "DeFi summer" · 2022 The Merge and the UST collapse. Each entry names the level it grew from.
+
+Framing rules for the history content:
+- Don't imply that Bitcoin invented every idea. It combined earlier ones.
+- Present stablecoins as a "how it works" explanation (reserves, collateral or algorithm), not as a simulation.
+- CBDCs and Layer-2 rollups get one mention at most. They are not timeline entries.
 
 ### Out of scope for v1 (next version)
 - Level 5, multiple copies of the ledger (peer-to-peer consensus with 3 copies side by side).
@@ -51,5 +56,5 @@ One extra page with a simple vertical timeline linking the levels to history: 20
 4. **Chain repair:** after that edit, mining blocks 2, 3, 4 and 5 in order turns all five green again.
 5. **Transactions:** in the sample data, adding "Alice → Bob: 1000" is flagged invalid (Alice cannot afford it), and the balances panel updates for valid transfers.
 6. **Difficulty:** changing the difficulty from 3 to 4 re-checks every block, so blocks mined at 3 whose hash lacks a fourth zero turn red.
-7. **Then → Today:** every level page shows its card with the content in §3, and the Timeline page lists all 8 entries.
+7. **Then → Today:** every level page shows its card with the content in §3, and the Timeline page lists all 11 entries.
 8. **Reset:** Reset on any page restores the sample data with every block green.
